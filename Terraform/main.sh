@@ -25,5 +25,5 @@ sudo apt-get update
 #Install git and cd into repository
     sudo apt install git 
     git clone https://github.com/Ozii-cr/Emart-App.git 
-    cd Emart-App
-    docker-compose up
+    cd Emart-App/
+    docker-compose up -d
