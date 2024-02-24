@@ -1,3 +1,4 @@
+  #Security group for the EC2 instance
 resource "aws_security_group" "emart_sg" {
   name        = "emart-sg"
   description = "Security group for Emart ssh"
@@ -8,13 +9,14 @@ resource "aws_security_group" "emart_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  #Allow SSH from all IPs
   ingress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+ #Allow all IPs to access port 80
   ingress {
     from_port   = 80
     to_port     = 80
@@ -22,6 +24,6 @@ resource "aws_security_group" "emart_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "allow-ssh"
+    Name = "allow-ssh and port 80"
   }
 }
