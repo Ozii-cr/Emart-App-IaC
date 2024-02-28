@@ -32,8 +32,3 @@ Run
   terraform apply
 ```
 
-Run
-
-```bash
-  terraform apply
-```
