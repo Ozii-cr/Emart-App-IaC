@@ -22,9 +22,15 @@ Go to the project directory
 ```
 Generate ssh key with the name 'dovekey' in the directory
 ```bash
-  ssh-keygen dovekey
+  ssh-keygen -f dovekey
 ```
 
+
+Run
+
+```bash
+  terraform apply
+```
 
 Run
 
