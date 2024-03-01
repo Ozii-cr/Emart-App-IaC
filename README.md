@@ -32,3 +32,8 @@ Run
   terraform apply
 ```
 
+Stop
+```bash
+  terraform destroy
+```
+
